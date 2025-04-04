@@ -1,0 +1,34 @@
+# Initial variable assignments
+charge = 0.00
+numChars = 18  # Number of characters
+color = "black"  # Color of characters
+woodType = "oak"  # Type of wood
+
+# Base charge for the sign
+charge = 35.00
+
+# Add charge for extra characters if there are more than 5
+if numChars > 5:
+    charge += (numChars - 5) * 4  # $4 for each character after the 5th
+
+# Add charge for oak wood
+if woodType == "oak":
+    charge += 20.00  # Add $20 for oak wood
+
+# Add charge for gold-leaf lettering
+if color == "gold":
+    charge += 15.00  # Add $15 for gold-leaf lettering
+
+# Output the final charge for the sign
+print("The total charge for the sign is: $" + str(charge))
+
+# Declare and initialize variables here.
+# Charge for this sign.
+# Number of characters.
+# Color of characters.
+# Type of wood.
+
+# Write assignment and if statements here as appropriate.
+
+# Output Charge for this sign.
+print("The charge for this sign is $" + str(charge))
